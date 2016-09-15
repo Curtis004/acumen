@@ -1,0 +1,4 @@
+server.error.whitelabel.enabled=false
+wifiplug.host=https://wifiplugapi.co.uk:3081/zcloud/api
+wifiplug.username=
+wifiplug.password=
