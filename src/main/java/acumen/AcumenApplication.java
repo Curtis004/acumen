@@ -21,9 +21,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 @SpringBootApplication
-public class AcumenApplication extends SpringBootServletInitializer {
-    @Autowired
-    private Environment environment;
+public class AcumenApplication {
+	@Autowired
+	private Environment environment;
 
 	@Autowired
 	private StateService stateService;
@@ -31,15 +31,6 @@ public class AcumenApplication extends SpringBootServletInitializer {
 	@Bean
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
-	}
-
-    public AcumenApplication(Environment environment) {
-        this.environment = environment;
-    }
-
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(AcumenApplication.class);
 	}
 
 	public static void main(String[] args) throws Exception {
