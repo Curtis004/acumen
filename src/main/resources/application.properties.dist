@@ -1,4 +1,9 @@
 server.error.whitelabel.enabled=false
+
 wifiplug.host=https://wifiplugapi.co.uk:3081/zcloud/api
-wifiplug.username=
-wifiplug.password=
+wifiplug.username=%WIFIPLUG_USER%
+wifiplug.password=%WIFIPLUG_PASSWORD%
+
+wifiplug.mac.livingroom.lamp=%LIVINGROOM_LAMP_MAC%
+wifiplug.mac.livingroom.tv=%LIVINGROOM_TV_MAC%
+wifiplug.mac.bedroom.lamp=%BEDROOM_LAMP_MAC%
