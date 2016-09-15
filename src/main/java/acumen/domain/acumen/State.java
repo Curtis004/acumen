@@ -6,7 +6,7 @@ public class State {
     private String name;
 
     public State(States states) {
-        this.name = states.getState();
+        this.name = states.getState().toUpperCase();
     }
 
     public String getName() {
