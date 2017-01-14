@@ -16,7 +16,7 @@ public class StateTests {
     public void testStateDomainConstructors() {
         State state = new State(States.ON);
 
-        assertThat(state.getName(), is("on"));
+        assertThat(state.getName(), is("ON"));
     }
 
     @Test
